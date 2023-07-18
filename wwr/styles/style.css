@@ -22,10 +22,65 @@ nav a:hover{
     color: black;
 }
 
-.home-grid{
+.home_grid{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
 }
+
+.faq_grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.faq_title{
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+.faq_foto{
+    grid-column: 1/2;
+    grid-row: 2/7;
+}
+
+#hav_foto{
+    padding-top: 80px;
+    padding-right: 20px;
+    width: 500px;
+    height:1000px;
+}
+
+.faq_one{
+    padding-top: 40px;
+    grid-column: 2/2;
+    grid-row: 2;
+}
+
+.faq_two{
+    grid-column: 2/2;
+    grid-row: 3;
+}
+
+.faq_third{
+    grid-column: 2/2;
+    grid-row: 4;
+}
+
+.faq_forth{
+    grid-column: 2/2;
+    grid-row: 5;
+}
+
+.faq_five{
+    grid-column: 2/2;
+    grid-row: 6;
+}
+
+.faq_six{
+    grid-column: 2/2;
+    grid-row: 7;
+}
+
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -47,7 +102,7 @@ nav a:hover{
 }
 
 .home-tittle{
-    color: black;
+    color: white;
     font-family: Garamond, Helvetica, sans-serif;
     font-size: 2em;
     margin-top: 10px;
@@ -109,12 +164,12 @@ header{
     color: black;
     text-decoration: none;
     font-size: 18px;
-    padding: 15px, 30px;
+    padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
 }
 .book:hover, .join:hover{
-    background-color: #648de5;
+    background-color: #ffffff;
     color: black;
 }
 .msg{
@@ -131,14 +186,14 @@ header{
 }
 .msg p{
     color:  black;
-    font-size: at .8em;
+    font-size: at 0.8em;
     padding-bottom: 15px;
 }
 footer{
     background-color: #6f7364;
     color: black;
     font-size: 1.3em;
-    padding: 25px, 50px;
+    padding: 25px 50px;
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
@@ -162,16 +217,22 @@ footer .social img{
     margin: 200px 0;
     grid-column: 2/4;
     grid-row: 2/3;
+    width: 300px;
+    height: 300px;
 }
 .camping-card{
     margin: 200px 0;
     grid-column: 5/7;
     grid-row: 2/3;
+    width: 300px;
+    height: 300px;
 }
 .rapids-card{
     margin: 200px 0;
     grid-column: 8/10;
     grid-row: 2/3;
+    width: 300px;
+    height: 300px;
 }
 .card-img{
     border: 10px solid #d9c2a3;
@@ -186,7 +247,6 @@ footer .social img{
     transform: scale(1.1);
 }
 .mountains{
-    width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
